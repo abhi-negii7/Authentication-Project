@@ -21,9 +21,8 @@ function Login() {
         },
         { withCredentials: true }
       );
-      console.log("Login response:", response.data);
-      setUserData(response.data.user);
-      // setUserData(response.data);
+      // setUserData(response.data.user);
+      setUserData(response.data);
       navigate("/", { replace: true });
     } catch (error) {
       alert(error.response.data.status);
