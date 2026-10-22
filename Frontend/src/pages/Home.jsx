@@ -31,7 +31,7 @@ function Home() {
 
 const handleLogout = async () => {
   try {
-    await axios.post(`${serverURL}api/logout`, {}, { withCredentials: true });
+    await axios.post(`${serverURL}/api/logout`, {}, { withCredentials: true });
   } catch (error) {
     console.log("Logout error:", error);
   } finally {
