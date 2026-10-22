@@ -18,7 +18,7 @@ app.use(
 );
 
 app.use(cookieParser());
-app.use("/", authRouter);
+app.use("/api", authRouter);
 let port = process.env.PORT || 4000;
 
 //Route
