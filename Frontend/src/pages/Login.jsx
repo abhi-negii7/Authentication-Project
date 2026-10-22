@@ -13,7 +13,7 @@ function Login() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      let data = await axios.post(
+      let response = await axios.post(
         serverURL + "api/login",
         {
           email,
@@ -22,7 +22,7 @@ function Login() {
         { withCredentials: true }
       );
       // console.log(data.user);
-      setUserData(data.data);
+      setUserData(response.data);
       navigate("/", { replace: true });
     } catch (error) {
       alert(error.response.data.status);
