@@ -12,7 +12,7 @@ app.use(express.json());
 // We need to set credentails as true because otherwise it will not accept the cookies
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://authentication-project-frontend-gzod.onrender.com/",
     credentials: true,
   })
 );
