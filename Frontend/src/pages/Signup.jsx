@@ -29,7 +29,7 @@ function Signup() {
         formData.append("profileImage", backendImage);
       }
 
-      let data = await axios.post(serverURL + "/signup", formData, {
+      let data = await axios.post(serverURL + "api/signup", formData, {
         withCredentials: true,
         headers: { "Content-Type": "multipart/form-data" },
       });
