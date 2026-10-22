@@ -21,7 +21,7 @@ function Login() {
         },
         { withCredentials: true }
       );
-      // console.log(data.user);
+      console.log(response.data);
       setUserData(response.data);
       navigate("/", { replace: true });
     } catch (error) {
